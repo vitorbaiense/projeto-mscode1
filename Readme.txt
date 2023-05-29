@@ -8,3 +8,4 @@ License: https://bootstrapmade.com/license/
 <h1> Ideias para adicionar no projeto</h1>
 <br>
 <p> adicionar efeito nos cards de pratos do menu(cardápio)</p>
+adicionar efeito escurecer button <reserve>
