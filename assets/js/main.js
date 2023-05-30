@@ -1,16 +1,7 @@
-/**
-* Template Name: Yummy
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
-  /**
-   * Preloader
-   */
+
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
@@ -18,9 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /**
-   * Sticky header on scroll
-   */
   const selectHeader = document.querySelector('#header');
   if (selectHeader) {
     document.addEventListener('scroll', () => {
@@ -28,9 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /**
-   * Navbar links active state on scroll
-   */
   let navbarlinks = document.querySelectorAll('#navbar a');
 
   function navbarlinksActive() {
@@ -53,9 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', navbarlinksActive);
   document.addEventListener('scroll', navbarlinksActive);
 
-  /**
-   * Mobile nav toggle
-   */
   const mobileNavShow = document.querySelector('.mobile-nav-show');
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
@@ -72,9 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNavHide.classList.toggle('d-none');
   }
 
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
+
   document.querySelectorAll('#navbar a').forEach(navbarlink => {
 
     if (!navbarlink.hash) return;
@@ -90,9 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   });
 
-  /**
-   * Toggle mobile nav dropdowns
-   */
+
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
   navDropdowns.forEach(el => {
@@ -109,9 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   });
 
-  /**
-   * Scroll top button
-   */
+
   const scrollTop = document.querySelector('.scroll-top');
   if (scrollTop) {
     const togglescrollTop = function() {
@@ -125,16 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
-  /**
-   * Initiate glightbox
-   */
+
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
 
-  /**
-   * Init swiper slider with 1 slide at once in desktop view
-   */
   new Swiper('.slides-1', {
     speed: 600,
     loop: true,
@@ -154,9 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /**
-   * Init swiper slider with 3 slides at once in desktop view
-   */
+
   new Swiper('.slides-3', {
     speed: 600,
     loop: true,
@@ -186,9 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /**
-   * Gallery Slider
-   */
+
   new Swiper('.gallery-slider', {
     speed: 400,
     loop: true,
@@ -219,9 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /**
-   * Animation on scroll function and init
-   */
+
   function aos_init() {
     AOS.init({
       duration: 1000,
